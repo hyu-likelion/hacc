@@ -4,5 +4,10 @@ Momentum : <a href="https://chrome.google.com/webstore/detail/momentum/laookkfkn
 
 <img src="https://lh3.googleusercontent.com/Y8xI75B90Tfgwm1hpp-D4y0dkYze9DbjWyEZhnnek1rRoCMNoZ2A-LsFte6zJv_hE8t6IxDK6sBFSN7Urq7499eFCQ=w640-h400-e365-rj-sc0x00ffffff" alt="Momentum (출처 : Chrome 웹스토어)">
 
- 
+Clock
+Date()
+setInterval() : refresh at every second
 
+Storage
+localStorage.setItem()
+localStorage.getItem()
