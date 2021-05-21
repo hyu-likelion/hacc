@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
-function Main() {
+function Manage() {
   const onClickdiv = () => {
     settext("hihi")
   };
-  const [text, settext] = useState("main");
+  const [text, settext] = useState("manage");
   
   return (
     <div onClick={onClickdiv}>
@@ -13,4 +13,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Manage;

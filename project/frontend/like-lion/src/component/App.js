@@ -1,16 +1,17 @@
 import './App.css';
-import React, {useState} from "react";
+import { HashRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import React from "react";
+import Main from "../router/main";
+import Manage from "../router/manage";
 
 function App() {
-  const onClickdiv = () => {
-    settext("hihi")
-  };
-  const [text, settext] = useState("hi");
-  
   return (
-    <div onClick={onClickdiv}>
-      {text}
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Main}/>
+        <Route path="/manage" component={Manage}/>
+      </Switch>
+    </Router>
   );
 }
 
