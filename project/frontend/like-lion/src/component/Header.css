@@ -1,18 +1,25 @@
 header {
     border-bottom: 1px solid #c7c7c7;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
 }
 
-.header-title {
+.header-title a {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 .header-title div {
     padding-right: 10px;
     font-size: 1.3rem;
     font-weight: bold;
 }
+.header-title img {
+    width: 30px;
+    margin-right: 10px;
+}
 
 .header-title-subtitle {
     font-size: 1rem !important;
 }
+

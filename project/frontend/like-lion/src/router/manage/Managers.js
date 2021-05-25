@@ -60,31 +60,34 @@ const managers = [
   },
 ]
 
+const turn = "9";
+
 function Manager({manager}) {
   return (
     <div className={"managers-each"}>
-      <img src={"https://image.flaticon.com/icons/png/512/2948/2948035.png"}/>
       <div>
-        <div>직책 : {manager.duty}</div>
-        <div>학부 : {manager.depart}</div>
-        <div>이름 : {manager.name}</div>
-        <div>stack? : {manager.stack}</div>
-        <div>description? : {manager.description}</div>
+        <div className={"managers-each-name"}>
+          <h3>{manager.name}</h3>
+          <div>{manager.duty}</div>
+        </div>
+        <div>{manager.depart}</div>
+        <div>stack {manager.stack}</div>
+        <div>description {manager.description}</div>
       </div>
+      {/*<img src={"https://image.flaticon.com/icons/png/512/2948/2948035.png"}/>*/}
+      <img src={"https://pbs.twimg.com/media/ExUElF7VcAMx7jx.jpg"}/>
     </div>
   );
-
 }
 
 function Managers() {
   return (
-    <div> {/* TODO: 크기 반응형으로 만들기 */}
-      <h2>운영진 소개</h2>
-      <h4>기수 : 9기</h4>  {/*TODO: DB에서 불러오기?*/}
+    <>
+      <h2>{turn}기 운영진 소개</h2>
       <div className={"managers-container"}>
         {managers.map(manager => <Manager manager={manager} />)}
       </div>
-    </div>
+    </>
   );
 }
 

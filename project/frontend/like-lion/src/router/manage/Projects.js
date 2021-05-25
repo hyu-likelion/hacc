@@ -99,7 +99,7 @@ function Project({project}) {
   return (
     <div className={"project-each"}>
       {/* TODO: 이미지 클릭하면 크게 보기 구현 */}
-      <img src={"https://image.flaticon.com/icons/png/512/1705/1705213.png"}/>
+      <img src={"https://docs.microsoft.com/ko-kr/xamarin/android/deploy-test/publishing/publishing-to-amazon-images/amazon-app-store.png"}/>
       <div>
         <Link to={project.link} className={"project-each-name"}>{project.name}</Link>
         <div className={"project-each-date"}>{project.sdate}~{project.edate}</div>
@@ -112,13 +112,15 @@ function Project({project}) {
 
 function Projects() {
   return (
-    <div>
-      <h2>자랑거리</h2>
-      <h4>전체목록 00개</h4> {/*TODO: 몇개인지 받아서 넣기*/}
+    <>
+      <div id={"title"}>
+        <h2>자랑거리</h2>
+        <h4>전체목록 {projects.length}개</h4>
+      </div>
       <div className={"projects-container"}>
         {projects.map(project => <Project project={project}/>)}
       </div>
-    </div>
+    </>
   );
 }
 
