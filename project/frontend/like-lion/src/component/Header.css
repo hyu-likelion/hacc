@@ -1,0 +1,18 @@
+header {
+    border-bottom: 1px solid #c7c7c7;
+    padding: 10px 20px 10px 20px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+.header-title div {
+    padding-right: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.header-title-subtitle {
+    font-size: 1rem !important;
+}

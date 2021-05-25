@@ -1,14 +1,12 @@
 import React, {useState} from "react";
+import Managers from "./Managers"
+import Projects from "./Projects"
 
 function Manage() {
-  const onClickdiv = () => {
-    settext("hihi")
-  };
-  const [text, settext] = useState("manage");
-  
   return (
-    <div onClick={onClickdiv}>
-      {text}
+    <div>
+      <Managers/>
+      <Projects/>
     </div>
   );
 }
