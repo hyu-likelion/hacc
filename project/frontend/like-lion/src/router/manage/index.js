@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Managers from "./Managers"
 import Projects from "./Projects"
-import "./index.css"
+import "./styles/index.css"
 
 function Manage() {
   return (
