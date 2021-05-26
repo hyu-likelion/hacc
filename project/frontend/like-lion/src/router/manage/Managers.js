@@ -1,5 +1,5 @@
 import React from "react";
-import "./Managers.css"
+import "./styles/Managers.css"
 
 const managers = [
   {
@@ -75,7 +75,7 @@ function Manager({manager}) {
         <div>description {manager.description}</div>
       </div>
       {/*<img src={"https://image.flaticon.com/icons/png/512/2948/2948035.png"}/>*/}
-      <img src={"https://pbs.twimg.com/media/ExUElF7VcAMx7jx.jpg"}/>
+      <img src={"https://resource.grapplet.com/marketplace/10485/1614110392355/%EB%85%B8%ED%8A%B8%EB%B6%81%ED%95%98%EB%8A%94%20%EC%82%AC%EB%9E%8C1.svg.preview.580x870.png"}/>
     </div>
   );
 }
