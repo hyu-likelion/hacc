@@ -1,0 +1,11 @@
+body {
+    background-color: peru;
+}
+
+h1 {
+    color: rgb(52, 73, 94);
+}
+
+.clicked {
+    color: #ff3a3a !important;
+}
