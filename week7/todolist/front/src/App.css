@@ -1,0 +1,30 @@
+.todo-list img {
+    height: 15px;
+    width: 15px;
+}
+
+.todo-input {
+    width: 500px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.todo-btn {
+    /*margin: 5px;*/
+    margin-left: 5px;
+    height: 35px;
+    width: 50px;
+    background: orange;
+}
+
+.todo-input,
+.todo-btn {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.todo-each-content {
+    /*padding-right: 100px;*/
+    width: 520px;
+    padding: 5px 0;
+}
